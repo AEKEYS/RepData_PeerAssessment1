@@ -54,6 +54,8 @@ stepTotalMedian <- summary(stepTotals)[[3]] #median
 ```
 
 * The individual averaged `r stepTotalMean` total steps per day.
+* The median was `r stepTotalMedian` (scientific notation).
+* These meausres (mean and median) also reported in the histogram below.
 
 A histogram plot lets us see how frequently (i.e., how many days) the individual met or exceeded his/her average step activity.
 
