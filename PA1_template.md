@@ -53,7 +53,7 @@ stepTotalMedian <- summary(stepTotals)[[3]] #median
 
 * The individual averaged 9354 total steps per day.
 * The median was 1.04\times 10^{4} (scientific notation).
-* These meausres (mean and median) also reported in the histogram below.
+* These meausres (mean and median) are also reported in the histogram below.
 
 A histogram plot lets us see how frequently (i.e., how many days) the individual met or exceeded his/her average step activity.
 
@@ -74,7 +74,7 @@ par(mar=c(7,4,2,1)) #Create extra space in margin for additional text
 
 ## What is the average daily activity pattern?
 
-So far, we have a picture of the individual's activity on a daily basis, but we have little insight into how that activity is distributed throughout the day.  In order to answer questions like, "what time of day is the individual most active?," we average step activity across each 5-min interval for all days.
+So far, we have an understanding of the individual's overall step activity but have little insight into how that activity is distributed throughout the day.  In order to answer questions like, "what time of day is the individual most active?," we average step activity across each 5-min interval for all days.
 
 
 ```r
@@ -103,8 +103,6 @@ points(x=maxPosition*5/60,y=maxValue,pch=19,col="red")
 text(x=maxPosition*5/60,y=maxValue, 
      col="red",pos=4,
      labels=sprintf("Max: %.0f steps at %dth interval",maxValue,maxPosition))
-text(x=20,y=170,labels=sprintf("Date of data download: "),cex=.8,col="blue")
-text(x=20,y=150,labels=sprintf("%s",dateDownloaded),cex=.8,col="blue")
 ```
 
 ![](./PA1_template_files/figure-html/plotDailyActivityPattern-1.png) 
